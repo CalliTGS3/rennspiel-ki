@@ -1,0 +1,21 @@
+{
+    "name": "Rennspiel-KI",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "radio": "*",
+        "pxt-neural-network-json": "github:telekom/pxt-ki-in-schulen#9bdc2e509ac5513393c16e577e8b2ae65cc02063"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "supportedTargets": [
+        "calliopemini"
+    ],
+    "preferredEditor": "tsprj"
+}
