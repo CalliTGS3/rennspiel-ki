@@ -19,6 +19,9 @@ function kiSteuerung () {
     }
     serial.writeLine(output)
 }
+input.onButtonPressed(Button.A, function () {
+    buttonA()
+})
 function buttonB () {
     if (playerCar.get(LedSpriteProperty.X) < 4) {
         playerCar.change(LedSpriteProperty.X, 1)
@@ -29,6 +32,9 @@ function buttonA () {
         playerCar.change(LedSpriteProperty.X, -1)
     }
 }
+input.onButtonPressed(Button.B, function () {
+    buttonB()
+})
 function erzeugeSnapshot () {
     snapshot = [playerCar.get(LedSpriteProperty.X) / 4, (car1.get(LedSpriteProperty.Y) + 1) / 5, (car2.get(LedSpriteProperty.Y) + 1) / 5, (car3.get(LedSpriteProperty.Y) + 1) / 5, (car4.get(LedSpriteProperty.Y) + 1) / 5, (car5.get(LedSpriteProperty.Y) + 1) / 5]
     if (car1.isDeleted()) {
